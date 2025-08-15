@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Website Design</title>
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+     <link rel="stylesheet" href="main.css"> 
+
+</head>
+
+<body>
+
+
+      <!--Header section starts-->
+      <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        
+        <a href="#" class="logo">Bloom Corner<span>...</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+      </nav>
+      <div class="icons">
+        <a href="#" class="fas fa-user"></a>
+        <a href= cart.html  class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-heart"></a>
+
+
+              <!-- Login Modal -->
+ <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="login-title">Login</h2> 
+    
+        <form>
+            <label for="username">Username or Email Address:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+ </div>
+
+    
+        
+    </div>
+    <body style="background-image:url('b1.png');"></body>
+    </header>
+
+     <!--Header section ends-->
+
+
+     <!--Home section starts-->
+     <section class="home" id="home">
+      <div class="content">
+          <h3>Fresh Flowers</h3>
+          <span>Natural & beautiful flowers</span>
+          <p style="font-size: 15px;">Gorgeous fresh modern flower bouquets delivered fresh daily.Order fresh,
+             beautiful flower bouquets for immediate dispatch all across Sri Lanka at Bloom Corner today.
+             Through our special gifts delivery service,we make sending fresh flowers to Sri Lanka easy!
+             Never miss a birthday or anniversary again !</p>
+          <a href="#products" class="btn"> Shop Now</a>
+      </div>
+   </section>
+
+   <!--home section ends-->
+
+
+   <!--about section starts-->
+
+   <section class="about" id="about">
+    <h1 class="heading"><span>about</span> us </h1>
+
+    <div class="row">
+        <div class="video-container"> 
+            <video src="video.mp4" loop autoplay muted></video>
+            <h3>best flower sellers</h3>
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>At Bloom Corner, we are passionate about providing you with the freshest, 
+                most beautiful flowers for every occasion. Our expert florists handcraft each arrangement with care,
+                 ensuring every bouquet is unique and designed to express your emotions perfectly. 
+                 We take pride in sourcing flowers locally to guarantee their freshness and longevity,
+                 while also embracing eco-friendly practices to reduce our environmental impact.</p>
+                <p> With our reliable same-day delivery service and commitment to customer satisfaction,
+                     you can trust us to make your special moments even more memorable.
+                      Choose us for flowers that are crafted with love and delivered with care!</p>
+                <a href="#" class="btn">learn more</a>
+        </div>
+    </div>
+</section>
+   <!--about section ends-->
+
+  <!--icons section starts-->
+
+  <section class="icons-container">
+
+    <div class="icons">
+        <img src="icon1.jpg" alt="">
+        <div class="info">
+            <h3>free delivery</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="icon2.jpg" alt="">
+        <div class="info">
+            <h3>10 days returns</h3>
+            <span>moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="icon3.jpg" alt="">
+        <div class="info">
+            <h3>offer & gifts</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="icon4.jpg" alt="">
+        <div class="info">
+            <h3>secure payments</h3>
+            <span>protected by paypal</span>
+        </div>
+    </div>
+
+</section>
+  <!--icons section ends-->
+
+  <!--products section starts-->
+
+  <section class="products" id="products">
+    
+    <h1 class="heading">latest <span>products</span> </h1>
+    <div class="box-container">
+
+        <div class="box" data-id="1" data-price="6750" data-name="Pinkish Love">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="img1.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn" id="cart1">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Pinkish Love</h3>
+                <div class="price">Rs.6750 <span>Rs.7500</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="2" data-price="6800" data-name="Graceful Glow">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="img2.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="2">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Graceful Glow</h3>
+                <div class="price">Rs.6800 <span>Rs.8000</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="3" data-price="6175" data-name="Sunshine Bliss">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="img3.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="3">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Sunshine Bliss</h3>
+                <div class="price">Rs.6175 <span>Rs.6500</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="4" data-price="4500" data-name="Floral Fantacy">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="img4.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="4">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Floral Fantacy</h3>
+                <div class="price">Rs.4500 <span>Rs.5000</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="5" data-price="3600" data-name="Gerbera Daisy">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="img5.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="5">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Gerbera Daisy</h3>
+                <div class="price">Rs.3600 <span>Rs.4500</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="6" data-price="3825" data-name="Pure Elegance">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="img6.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="6">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Pure Elegance</h3>
+                <div class="price">Rs.3825 <span>Rs.4500</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="7" data-price="4050" data-name="Glow Beauty">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="img7.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="7">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Glow Beauty</h3>
+                <div class="price">Rs.4050 <span>Rs.4500</span></div>
+            </div>
+        </div>
+        <div class="box" data-id="8" data-price="2800" data-name="Radiant Romance">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="img8.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="8">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Radiant Romance</h3>
+                <div class="price">Rs.2800 <span>Rs.3500</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="9" data-price="3825" data-name="Pure Love">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="img9.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="9">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Pure Love</h3>
+                <div class="price">Rs.3825 <span>Rs.4500</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="10" data-price="4500" data-name="Red Blush">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="img10.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="10">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Red Blush</h3>
+                <div class="price">Rs.4500 <span>Rs.5000</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="11" data-price="3400" data-name="Eternal Spring">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="img12.jpeg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="11">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Eternal Spring</h3>
+                <div class="price">Rs.3400 <span>Rs.4000</span></div>
+            </div>
+        </div>
+
+        <div class="box" data-id="13" data-price="4050" data-name="Lavender Dreams">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="img13.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn"  data-id="13">add to cart</a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Lavender Dreams</h3>
+                <div class="price">Rs.4050 <span>Rs.4500</span></div>
+            </div>
+        </div>
+
+    </div>
+
+  </section>
+   <!--products section ends-->
+
+   <!--review section starts-->
+
+   <section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+            </div>
+            <p>I ordered a bouquet for my friend's birthday, and it was absolutely stunning!
+                 The flowers were fresh,vibrant, and smelled amazing.
+                 The best part? They delivered it the same day! Couldn't be happier with the service.</p>
+            <div class="user">
+                <img src="review.jpg"  alt="">
+                <div class="user-info">
+                    <h3>Asha</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+            </div>
+            <p>I had a custom arrangement in mind, and the team was so helpful in making my vision come to life. 
+                They listened to every detail and created a bouquet that was even more beautiful than I imagined.
+                 Highly recommend!</p>
+            <div class="user">
+                <img src="review1.jpg"  alt="">
+                <div class="user-info">
+                    <h3>Nimal Dodanthenna</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+            </div>
+            <p>I’ve ordered flowers from here multiple times, and they never disappoint.
+                 Whether it’s for a wedding, birthday, or just to brighten someone’s day, 
+                 their arrangements are always fresh and gorgeous. Definitely my go-to flower shop!</p>
+            <div class="user">
+                <img src="review2.jpg"  alt="">
+                <div class="user-info">
+                    <h3>Kithmini</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+            </div>
+            <p>I love that this shop uses sustainable practices. 
+                The flowers came in eco-friendly packaging, and they still looked amazing!
+                 It feels great to support a business that cares about both beauty and the environment.</p>
+            <div class="user">
+                <img src="review3.jpg"  alt="">
+                <div class="user-info">
+                    <h3>Sahan Samaraveera</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+                <i class="fas fas-star"></i>
+            </div>
+            <p>The flowers I ordered stayed fresh for over a week! 
+                I was so impressed by their quality and how long they lasted.
+                 My home felt so bright and cheerful with these flowers. Will definitely order again!</p>
+            <div class="user">
+                <img src="review4.jpg"  alt="">
+                <div class="user-info">
+                    <h3>Sasha De Silva</h3>
+                    <span>happy customer</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+    </div>
+   </section>
+   <!--review section ends-->
+
+   <!--contact section starts-->
+
+   <section class="contact"  id="contact">
+
+    <h1 class="heading"> <span> contact</span> us</h1>
+
+    <div class="row"> 
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name=""class="box" placeholder="messege" id=""  cols="30" rows="10"></textarea>
+            <input type="submit" value="send messege" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="contact.png" alt="">
+        </div>
+    </div>
+   </section>
+   <!--contact section ends-->
+
+    <!--footer section starts-->
+    
+    <section class="footer";>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my orders</a>
+                <a href="#">my favaourite</a>
+
+            </div>
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">Colombo</a>
+                <a href="#">Kandy</a>
+                <a href="#">Galle</a>
+                <a href="#">Kurunegala</a>
+                <a href="#">Badulla</a>
+
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+94772219931</a>
+                <a href="#">sithumini0506@gmail.com</a>
+                <a href="#">Colombo, Sri Lanka-400104</a>
+                <img src="pay.png"  alt="Payment Methods" class="payment-icon">
+            </div>
+
+        </div>
+
+        <div class="credit">created by <span> Ms.Sithumini Ariyasena</span> | allrights reserved.</div>
+
+<!--footer section ends-->
+
+</section>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+        const cartBtns = document.querySelectorAll('.cart-btn');
+        cartBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const productBox = this.closest('.box');
+                const productId = productBox.getAttribute('data-id');
+                const productPrice = productBox.getAttribute('data-price');
+                const productName = productBox.getAttribute('data-name');
+
+                
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                
+                const existingProduct = cart.find(item => item.id === productId);
+                if (existingProduct) {
+                    
+                    existingProduct.quantity += 1;
+                } else {
+                    
+                    cart.push({
+                        id: productId,
+                        name: productName,
+                        price: parseFloat(productPrice),
+                        quantity: 1 
+                    });
+                }
+
+              
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                
+                window.location.href = 'cart.html';
+            });
+        });
+    });
+
+    var modal = document.getElementById("loginModal");
+        var userIcon = document.querySelector(".fa-user");
+        var closeModal = document.getElementById("closeModal");
+
+        userIcon.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+</script>
+
+
+     
+
+
+
+</body>
+</html>

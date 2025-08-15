@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css"> 
+</head>
+
+<body>
+    <!-- Header section starts -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+      
+        <a href="#" class="logo">Bloom Corner<span>...</span></a>
+        <nav class="navbar">
+            <a href="main.html">Home</a>
+            <a href="main.html">About</a>
+            <a href="main.html">Products</a>
+            <a href="main.html">Review</a>
+            <a href="main.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-user"></a>
+            <a href= "#"  class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+    
+    
+                  <!-- Login Modal -->
+     <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 class="login-title">Login</h2>
+        
+            <form>
+                <label for="username">Username or Email Address:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+     </div>
+        <body style="background-image:url('b1.png');"></body>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+        <h1 class="heading">Your <span>cart</span></h1>
+        <div class="cart-container"> <!-- New container for styling -->
+            <div id="cart-items" class="box-container">
+                <!-- Cart items will be loaded here by JavaScript -->
+            </div>
+            <div id="cart-total">
+                <h3>Total: Rs. <span id="total-price">0</span></h3>
+            </div>
+        </div>
+    </section>
+
+     <!--footer section starts-->
+    
+    <section class="footer";>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my orders</a>
+                <a href="#">my favaourite</a>
+
+            </div>
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">Colombo</a>
+                <a href="#">Kandy</a>
+                <a href="#">Galle</a>
+                <a href="#">Kurunegala</a>
+                <a href="#">Badulla</a>
+
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+94772219931</a>
+                <a href="#">sithumini0506@gmail.com</a>
+                <a href="#">Colombo, Sri Lanka-400104</a>
+                <img src="pay.png" alt="Payment Methods" class="payment-icon">
+            </div>
+
+        </div>
+
+        <div class="credit">created by <span> Ms.Sithumini Ariyasena</span> | allrights reserved.</div>
+
+<!--footer section ends-->
+
+
+
+
+
+    <script>
+       
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        
+        function displayCartItems() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const totalPriceContainer = document.getElementById('total-price');
+
+            
+            cartItemsContainer.innerHTML = '';
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+            } else {
+                let total = 0;
+                cart.forEach((item, index) => {
+                    cartItemsContainer.innerHTML += `
+                        <div class="cart-item">
+                            <p>${item.name} - Rs.${item.price}</p>
+                            <button onclick="removeItem(${index})">Remove</button>
+                        </div>
+                    `;
+                    total += item.price;
+                });
+                totalPriceContainer.textContent = total;
+            }
+        }
+
+       
+        function removeItem(index) {
+            cart.splice(index, 1); 
+            localStorage.setItem('cart', JSON.stringify(cart)); 
+            displayCartItems(); 
+        }
+
+        
+        displayCartItems();
+
+        var modal = document.getElementById("loginModal");
+        var userIcon = document.querySelector(".fa-user");
+        var closeModal = document.getElementById("closeModal");
+
+        userIcon.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+</script>
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
